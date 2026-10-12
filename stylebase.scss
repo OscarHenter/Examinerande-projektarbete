@@ -1,15 +1,9 @@
-h1, h2, h3{
-    text-transform: uppercase;
-    color: #F2F3F5;
 
-}
-body {
-    background-color: #14161B;
-}
-p {
-    color: #F2F3F5;
-}
+$primarybackgroundcolor: #14161B; 
 
-a {
-    color: #FF8F5C ;
-}
+$textcolor:#C9CCD3;
+
+$linkcolor: #FF8F5C;
+
+$titlecolor: #F2F3F5;
+
