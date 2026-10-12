@@ -1,4 +1,15 @@
 h1, h2, h3{
     text-transform: uppercase;
+    color: white;
 
+}
+body {
+    background-color: #14161B;
+}
+p {
+    color: #F2F3F5;
+}
+
+a {
+    color: #FF8F5C ;
 }
