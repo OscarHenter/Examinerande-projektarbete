@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 @use "stylebase.scss" as*;
+=======
+@use "stylebase.scss" as *;
+>>>>>>> 3a1879d67156e912ebf90d409b44ceb8cab29b58
 
 header {
   padding: 20px;
@@ -7,12 +11,22 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 0.2px solid grey;
+  background: $primarybackgroundcolor;
+  color: $titlecolor;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
     gap: 2rem;
+}
+a{
+    color: $linkcolor;    
+}
+a:hover{
+    color: $linkhovercolor;
+    padding: 5px;
+    border-bottom: 2px solid $linkhovercolor;
 }
 
 .logo {
@@ -35,6 +49,11 @@ nav ul{
         font-size: 24px;
     }
 }
+
+body {
+    background: $primarybackgroundcolor;
+}
+
 
 footer {
   display: flex;
