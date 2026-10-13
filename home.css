@@ -29,6 +29,14 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.offercard h2 {
+  color: #15161a;
+}
+
+.offercard p {
+  color: #15161a;
+}
+
 p {
   color: #C9CCD3;
 }

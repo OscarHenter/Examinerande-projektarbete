@@ -27,6 +27,12 @@ h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
 }
+.offercard h2{
+    color: $secondarytitlecolor;
+}
+.offercard p{
+    color: $secondarytitlecolor;
+}
 p {
     color: $primarytextcolor;
 }
