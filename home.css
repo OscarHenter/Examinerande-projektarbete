@@ -24,6 +24,23 @@ a:hover {
   border-bottom: 2px solid #FF8F5C;
 }
 
+h1, h2, h3 {
+  color: #F2F3F5;
+  text-transform: uppercase;
+}
+
+.offercard h2 {
+  color: #15161a;
+}
+
+.offercard p {
+  color: #15161a;
+}
+
+p {
+  color: #C9CCD3;
+}
+
 .logo {
   display: flex;
   align-items: center;

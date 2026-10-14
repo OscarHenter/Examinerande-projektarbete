@@ -24,7 +24,19 @@ a:hover{
     padding: 5px;
     border-bottom: 2px solid $linkhovercolor;
 }
-
+h1, h2, h3 {
+    color: $titlecolor;
+    text-transform: uppercase;
+}
+.offercard h2{
+    color: $secondarytitlecolor;
+}
+.offercard p{
+    color: $secondarytitlecolor;
+}
+p {
+    color: $primarytextcolor;
+}
 .logo {
     display: flex;
     align-items: center;
