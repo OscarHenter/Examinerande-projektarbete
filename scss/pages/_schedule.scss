@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+.legend {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
