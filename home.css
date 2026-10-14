@@ -1,13 +1,3 @@
-header {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.2px solid grey;
-  background: #14161B;
-  color: #F2F3F5;
-}
-
 nav ul {
   list-style-type: none;
   display: flex;
@@ -61,12 +51,4 @@ p {
 
 body {
   background: #14161B;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  padding: 2rem 4rem;
-  border-top: 0.2px solid #39443e;
 }/*# sourceMappingURL=home.css.map */
