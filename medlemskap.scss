@@ -5,21 +5,29 @@
 .cards {
     display: flex;
     justify-content: space-evenly;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 1rem;
         .card {
             background-color: #212824;
-            padding: 1rem;
+            padding: 1.2rem;
             border-radius: 10px;
             width: 100%;
-            text-align: center;
-            margin: 10px;
         }
+}
+
+.card {
+    &:nth-child(2) {
+    border: 2px solid orange;
+    }
 }
 
 .container {
     width: 100%;
     box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 table {
@@ -48,6 +56,31 @@ tr {
   }
 }
 
+.faq-item{
+    background-color: #212824;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: bold; 
+}
+
+span {
+    font-size: 0.9rem;
+}
+
+.pricing-card.popular{
+    padding: 0.2rem;
+    background-color: orange;
+    color: black;
+    border-radius: 5px;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    display: inline-block;
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -82,5 +115,9 @@ tr {
     table-layout: fixed;
     border-collapse: collapse;
   }
+
+    td:first-child {
+    overflow-wrap: anywhere;
+}
 
 }
