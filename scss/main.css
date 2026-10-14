@@ -1,0 +1,39 @@
+body {
+  font-family: "Barlow", sans-serif;
+  color: #C9CCD3;
+  background-color: #14161B;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F2F3F5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: #FF8F5C;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+}/*# sourceMappingURL=main.css.map */
