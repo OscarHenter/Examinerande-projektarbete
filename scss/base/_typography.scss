@@ -1,0 +1,43 @@
+// scss/base/_typography.scss
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-body;
+  color: $textcolor;
+  background-color: $primarybackgroundcolor;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-heading;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $titlecolor;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: $linkcolor;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+}

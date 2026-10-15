@@ -1,0 +1,45 @@
+
+@use '../abstracts/variables' as *;
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2px solid grey;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p{
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    p:first-child {
+        font-weight: 1000;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    p:last-child {
+        font-size: 24px;
+    }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 2rem 4rem;
+  border-top: 0.2px solid #39443e;
+}
