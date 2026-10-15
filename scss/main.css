@@ -43,30 +43,8 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 0.2px solid grey;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo p {
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.logo p:last-child {
-  font-size: 24px;
+  background: #14161B;
+  color: #F2F3F5;
 }
 
 footer {
@@ -75,4 +53,30 @@ footer {
   font-size: 0.85rem;
   padding: 2rem 4rem;
   border-top: 0.2px solid #39443e;
+}
+
+.intensity {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 0.25rem 0.25rem;
+  border: 2px solid currentColor;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.intensity--high {
+  color: #FF7A3D;
+}
+.intensity--medium {
+  color: #80B9FC;
+}
+.intensity--low {
+  color: #4CD0AD;
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
 }/*# sourceMappingURL=main.css.map */
