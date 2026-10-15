@@ -10,17 +10,48 @@ header {
   color: $titlecolor;
 }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
+nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    a {
+        color: #e5e5e5;
+        text-decoration: none;
+        position: relative;
+        padding: 10px 0;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #ff7838;
+            transform: scaleX(0);
+            transition: transform 0.2s ease;
+        }
+
+        &:hover::after,
+        &.active::after {
+            transform: scaleX(1);
+        }
+
+        &:hover,
+        &.active {
+            color: #ff7838;
+        }
+    }
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-
     p{
         text-transform: uppercase;
         line-height: 1.2;

@@ -52,6 +52,30 @@ nav ul {
   display: flex;
   gap: 2rem;
 }
+nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  display: inline-block;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ff7838;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+nav a:hover::after, nav a.active::after {
+  transform: scaleX(1);
+}
+nav a:hover, nav a.active {
+  color: #ff7838;
+}
 
 .logo {
   display: flex;
