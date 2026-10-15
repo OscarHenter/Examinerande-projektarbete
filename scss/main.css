@@ -131,6 +131,14 @@ footer {
 .membership .card:nth-child(2) {
   border: 2px solid #FF7A3D;
 }
+.membership .buttonfirst {
+  width: 100%;
+  padding: 15px;
+}
+.membership .buttonsecond {
+  width: 100%;
+  padding: 15px;
+}
 .membership .container {
   width: 100%;
   box-sizing: border-box;
@@ -169,6 +177,7 @@ footer {
 .membership .price {
   font-size: 3.5rem;
   font-weight: bold;
+  margin: 0px;
 }
 .membership span {
   font-size: 0.9rem;
