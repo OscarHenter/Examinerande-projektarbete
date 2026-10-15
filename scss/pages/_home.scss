@@ -1,4 +1,7 @@
+@use "../abstracts/variables" as *;
+
 .home {
+
 a{
     color: $linkcolor;    
 }

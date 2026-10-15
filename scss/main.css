@@ -243,41 +243,34 @@ footer {
   background-color: #80726b;
 }
 
-header {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.2px solid grey;
+.home a {
+  color: #FF8F5C;
 }
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2rem;
+.home a:hover {
+  color: #FF8F5C;
+  padding: 5px;
+  border-bottom: 2px solid #FF8F5C;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo p {
+.home h1, .home h2, .home h3 {
+  color: #F2F3F5;
   text-transform: uppercase;
-  line-height: 1.2;
 }
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
+.home .offercard h2 {
+  color: #14161B;
 }
-.logo p:last-child {
-  font-size: 24px;
+.home .offercard p {
+  color: #14161B;
 }
-
-footer {
+.home p {
+  color: #C9CCD3;
+}
+.home body {
+  background: #14161B;
+}
+.home footer {
   display: flex;
   justify-content: space-between;
+  align-self: flex-end;
   font-size: 0.85rem;
   padding: 2rem 4rem;
   border-top: 0.2px solid #39443e;
