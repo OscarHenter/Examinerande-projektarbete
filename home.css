@@ -1,21 +1,5 @@
-header {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.2px solid grey;
-  background: #14161B;
-  color: #F2F3F5;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2rem;
-}
-
 a {
-  color: #C9CCD3;
+  color: #FF8F5C;
 }
 
 a:hover {
@@ -30,33 +14,15 @@ h1, h2, h3 {
 }
 
 .offercard h2 {
-  color: #15161a;
+  color: #14161B;
 }
 
 .offercard p {
-  color: #15161a;
+  color: #14161B;
 }
 
 p {
   color: #C9CCD3;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo p {
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.logo p:last-child {
-  font-size: 24px;
 }
 
 body {
