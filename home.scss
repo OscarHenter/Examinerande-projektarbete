@@ -1,11 +1,6 @@
 
 @use "stylebase.scss" as*;
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-}
 a{
     color: $linkcolor;    
 }
@@ -26,26 +21,6 @@ h1, h2, h3 {
 }
 p {
     color: $primarytextcolor;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    p{
-        text-transform: uppercase;
-        line-height: 1.2;
-    }
-
-    p:first-child {
-        font-weight: 1000;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    p:last-child {
-        font-size: 24px;
-    }
 }
 
 body {
