@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+
+.intensity {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 0.25rem 0.25rem;
+  border: 2px solid currentColor;
+  font-family: $font-heading;
+  text-align: center;
+  border-radius: 0.25rem;
+
+  &--high {
+    color: $intensity-high;
+  }
+
+  &--medium {
+    color: $intensity-medium;
+  }
+
+  &--low {
+    color: $intensity-low;
+  }
+}

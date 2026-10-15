@@ -108,6 +108,32 @@ footer {
   text-decoration: underline;
 }
 
+.intensity {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 0.25rem 0.25rem;
+  border: 2px solid currentColor;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.intensity--high {
+  color: #FF7A3D;
+}
+.intensity--medium {
+  color: #80B9FC;
+}
+.intensity--low {
+  color: #4CD0AD;
+}
+
+.schedule .legend {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
 .membership .cards {
   display: flex;
   justify-content: space-evenly;
