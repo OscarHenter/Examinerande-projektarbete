@@ -1,26 +1,25 @@
-
-@use "stylebase.scss" as*;
+@use "./scss/abstracts/variables" as *;
 
 a{
     color: $linkcolor;    
 }
 a:hover{
-    color: $linkhovercolor;
+    color: $linkcolor;
     padding: 5px;
-    border-bottom: 2px solid $linkhovercolor;
+    border-bottom: 2px solid $linkcolor;
 }
 h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
 }
 .offercard h2{
-    color: $secondarytitlecolor;
+    color: $primarybackgroundcolor;
 }
 .offercard p{
-    color: $secondarytitlecolor;
+    color: $primarybackgroundcolor;
 }
 p {
-    color: $primarytextcolor;
+    color: $textcolor;
 }
 
 body {
