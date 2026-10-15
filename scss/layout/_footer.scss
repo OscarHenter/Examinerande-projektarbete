@@ -1,7 +1,15 @@
+@use "../abstracts/variables.scss" as*;
+
 footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
   padding: 2rem 4rem;
   border-top: 0.2px solid #39443e;
+}
+.footer-address {
+    p:nth-child(2) a {
+        color: #ff7838;
+        text-decoration: underline;
+    }
 }
