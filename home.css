@@ -66,6 +66,7 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
+  align-self: flex-end;
   font-size: 0.85rem;
   padding: 2rem 4rem;
   border-top: 0.2px solid #39443e;
