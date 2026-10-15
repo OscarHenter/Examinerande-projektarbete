@@ -14,7 +14,7 @@
 
 .card {
     &:nth-child(2) {
-    border: 2px solid orange;
+    border: 2px solid #FF7A3D;
     }
 }
 
@@ -74,7 +74,7 @@ span {
 
 .pricing-card.popular{
     padding: 0.2rem;
-    background-color: orange;
+    background-color: #FF7A3D;
     color: black;
     border-radius: 5px;
     padding-right: 0.7rem;
