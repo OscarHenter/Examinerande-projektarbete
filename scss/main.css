@@ -33,7 +33,7 @@ a {
 /*kanske ska ändras*/
 .container {
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; /*<-----*/
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 50px;
