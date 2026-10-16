@@ -337,9 +337,33 @@ footer {
   color: #F2F3F5;
   text-transform: uppercase;
 }
+.home .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home section {
+  margin: 2%;
+}
+.home .card {
+  background: #1a1e2f;
+  border-radius: 10px;
+}
+.home .offercard {
+  background: #FF7A3D;
+  border-radius: 10px;
+}
 .home .offercard h2 {
   color: #14161B;
 }
-.logo p:last-child {
-  font-size: 24px;
+.home .offercard p {
+  color: #14161B;
+}
+.home p {
+  color: #C9CCD3;
+}
+.home .orangetext {
+  color: #FF7A3D;
+}
+.home body {
+  background: #14161B;
 }/*# sourceMappingURL=main.css.map */
