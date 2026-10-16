@@ -1,0 +1,17 @@
+@use "../abstracts/variables.scss" as*;
+
+.buttonfirst{
+    background-color: $puls-button;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.buttonsecond{
+    background-color: #1C1F28;
+    border-radius: 3px;
+    outline-color: white;
+    border:white solid;
+    color: white;
+}

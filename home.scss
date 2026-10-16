@@ -1,53 +1,37 @@
+@use "./scss/abstracts/variables" as *;
 
-@use "stylebase.scss" as*;
-
-nav ul{
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-}
 a{
     color: $linkcolor;    
 }
 a:hover{
-    color: $linkhovercolor;
+    color: $linkcolor;
     padding: 5px;
-    border-bottom: 2px solid $linkhovercolor;
+    border-bottom: 2px solid $linkcolor;
 }
 h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
 }
 .offercard h2{
-    color: $secondarytitlecolor;
+    color: $primarybackgroundcolor;
 }
 .offercard p{
-    color: $secondarytitlecolor;
+    color: $primarybackgroundcolor;
 }
 p {
-    color: $primarytextcolor;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    p{
-        text-transform: uppercase;
-        line-height: 1.2;
-    }
-
-    p:first-child {
-        font-weight: 1000;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    p:last-child {
-        font-size: 24px;
-    }
+    color: $textcolor;
 }
 
 body {
     background: $primarybackgroundcolor;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  font-size: 0.85rem;
+  padding: 2rem 4rem;
+  border-top: 0.2px solid #39443e;
 }
