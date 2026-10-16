@@ -202,11 +202,40 @@ footer {
   color: #4CD0AD;
 }
 
-.schedule .legend {
+.legend {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 1rem;
+}
+
+.schedule__days {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .schedule__days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.schedule__day {
+  padding: 1rem;
+  border: 1px solid #F2F3F5;
+}
+
+.schedule__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+th, td {
+  border-top: 0.2px solid grey;
 }
 
 .membership .cards {
@@ -339,106 +368,45 @@ footer {
   padding-right: 20px;
 }
 
-header {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.2px solid grey;
+.home a {
+  color: #FF8F5C;
 }
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo p {
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.logo p:last-child {
-  font-size: 24px;
-}
-
-.team-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  overflow: hidden;
-  border-radius: 6px;
-  background: #1c1f28;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 22px;
-  width: 100%;
-  align-items: stretch;
-}
-
-.portrait {
-  height: 270px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2b2f38;
-  color: #c4c6ce;
-  font-size: 15px;
-}
-
-.train-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  background-color: #1c1f28;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 35px;
-  border-radius: 6px;
-}
-
-.tag {
-  border: solid grey;
-  border-radius: 20px;
-  border-width: 0.1px;
+.home a:hover {
+  color: #FF8F5C;
   padding: 5px;
+  border-bottom: 2px solid #FF8F5C;
 }
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-  padding: 24px 22px 20px;
-  min-width: 0;
+.home h1, .home h2, .home h3 {
+  color: #F2F3F5;
+  text-transform: uppercase;
 }
-
-@media screen and (max-width: 768px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  .portrait {
-    height: 240px;
-  }
-  .card-content {
-    padding: 20px;
-  }
-  .card-content h2 {
-    font-size: 23px;
-  }
+.home .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home section {
+  margin: 2%;
+}
+.home .card {
+  background: #1a1e2f;
+  border-radius: 10px;
+}
+.home .offercard {
+  background: #FF7A3D;
+  border-radius: 10px;
+}
+.home .offercard h2 {
+  color: #14161B;
+}
+.home .offercard p {
+  color: #14161B;
+}
+.home p {
+  color: #C9CCD3;
+}
+.home .orangetext {
+  color: #FF7A3D;
+}
+.home body {
+  background: #14161B;
 }/*# sourceMappingURL=main.css.map */
