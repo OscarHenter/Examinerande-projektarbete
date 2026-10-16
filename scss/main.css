@@ -30,6 +30,16 @@ a {
   color: #FF8F5C;
 }
 
+/*kanske ska ändras*/
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 3.5rem;
@@ -214,6 +224,10 @@ footer {
 .membership .card:nth-child(2) {
   border: 2px solid #FF7A3D;
 }
+.membership :focus-visible {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+}
 .membership .buttonfirst {
   width: 100%;
   padding: 15px;
@@ -221,14 +235,6 @@ footer {
 .membership .buttonsecond {
   width: 100%;
   padding: 15px;
-}
-.membership .container {
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 .membership table {
   width: 100%;
