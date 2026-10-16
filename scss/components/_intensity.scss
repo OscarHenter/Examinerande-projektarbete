@@ -1,13 +1,8 @@
 @use '../abstracts/variables' as *;
 
 .intensity {
-  display: inline-block;
-  min-width: 1.5rem;
-  padding: 0.25rem 0.25rem;
-  border: 2px solid currentColor;
   font-family: $font-heading;
-  text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 
   &--high {
     color: $intensity-high;
