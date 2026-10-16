@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Barlow", sans-serif;
   color: #C9CCD3;
@@ -95,19 +96,83 @@ nav a:hover, nav a.active {
   font-size: 24px;
 }
 
+#menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    padding: 15px;
+    position: relative;
+  }
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: #F2F3F5;
+    cursor: pointer;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #14161B;
+    z-index: 10;
+  }
+  #menu-toggle:checked ~ nav {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin: 0;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
-  padding: 2rem 4rem;
   border-top: 0.2px solid #39443e;
+  align-items: center;
 }
 
-.footer-address p:nth-child(2) a {
-  color: #ff7838;
-  text-decoration: underline;
+.puls-träningsstudio-footer {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F2F3F5;
+  font-size: 20px;
 }
 
+.nummer {
+  color: #FF8F5C;
+  border-bottom: 1px solid #FF8F5C;
+}
+
+@media (max-width: 390px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+  footer p {
+    width: 100%;
+    align-items: center;
+  }
+  .puls-träningsstudio-footer {
+    font-size: 18px;
+  }
+}
 .intensity {
   display: inline-block;
   min-width: 1.5rem;
@@ -149,6 +214,14 @@ footer {
 .membership .card:nth-child(2) {
   border: 2px solid #FF7A3D;
 }
+.membership .buttonfirst {
+  width: 100%;
+  padding: 15px;
+}
+.membership .buttonsecond {
+  width: 100%;
+  padding: 15px;
+}
 .membership .container {
   width: 100%;
   box-sizing: border-box;
@@ -187,6 +260,7 @@ footer {
 .membership .price {
   font-size: 3.5rem;
   font-weight: bold;
+  margin: 0px;
 }
 .membership span {
   font-size: 0.9rem;
@@ -237,10 +311,18 @@ footer {
 }
 .buttonfirst {
   background-color: #FF7A3D;
+  color: black;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
 .buttonsecond {
-  background-color: #80726b;
+  background-color: #1C1F28;
+  border-radius: 3px;
+  outline-color: white;
+  border: white solid;
+  color: white;
 }
 
 .home a {
@@ -258,20 +340,6 @@ footer {
 .home .offercard h2 {
   color: #14161B;
 }
-.home .offercard p {
-  color: #14161B;
-}
-.home p {
-  color: #C9CCD3;
-}
-.home body {
-  background: #14161B;
-}
-.home footer {
-  display: flex;
-  justify-content: space-between;
-  align-self: flex-end;
-  font-size: 0.85rem;
-  padding: 2rem 4rem;
-  border-top: 0.2px solid #39443e;
+.logo p:last-child {
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
