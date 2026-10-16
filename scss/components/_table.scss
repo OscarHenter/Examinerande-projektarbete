@@ -1,5 +1,5 @@
 @use "../abstracts/variables.scss" as *;
 
-th {
-    
+th, td {
+    border-top: 0.2px solid grey;
 }
