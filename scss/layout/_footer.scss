@@ -5,6 +5,7 @@ footer {
   justify-content: space-between;
   font-size: 0.85rem;
   border-top: 0.2px solid #39443e;
+  align-items: center;
 }
 .puls-träningsstudio-footer{
   font-family: $font-heading;
@@ -17,4 +18,26 @@ footer {
 .nummer {
   color: $linkcolor;
   border-bottom: 1px solid $linkcolor;
+}
+
+
+@media (max-width: 390px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  footer p {
+    width: 100%;
+    align-items: center;
+  }
+
+  .puls-träningsstudio-footer {
+    font-size: 18px;
+  }
+
+  
 }

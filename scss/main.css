@@ -96,11 +96,47 @@ nav a:hover, nav a.active {
   font-size: 24px;
 }
 
+#menu-toggle,
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    padding: 15px;
+    position: relative;
+  }
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: #F2F3F5;
+    cursor: pointer;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #14161B;
+    z-index: 10;
+  }
+  #menu-toggle:checked ~ nav {
+    display: block;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin: 0;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
   border-top: 0.2px solid #39443e;
+  align-items: center;
 }
 
 .puls-träningsstudio-footer {
@@ -116,6 +152,22 @@ footer {
   border-bottom: 1px solid #FF8F5C;
 }
 
+@media (max-width: 390px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+  footer p {
+    width: 100%;
+    align-items: center;
+  }
+  .puls-träningsstudio-footer {
+    font-size: 18px;
+  }
+}
 .intensity {
   display: inline-block;
   min-width: 1.5rem;
@@ -298,12 +350,4 @@ nav ul {
 }
 .logo p:last-child {
   font-size: 24px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  padding: 2rem 4rem;
-  border-top: 0.2px solid #39443e;
 }/*# sourceMappingURL=main.css.map */
