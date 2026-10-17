@@ -394,6 +394,7 @@ th, td {
 .home .offercard {
   background: #FF7A3D;
   border-radius: 10px;
+  padding: 10px 15px 10px 15px;
 }
 .home .offercard h2 {
   color: #14161B;
