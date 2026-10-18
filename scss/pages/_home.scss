@@ -22,6 +22,18 @@ h1, h2, h3 {
 section{
     margin: 2%;
 }
+.mainbuttons{
+    display: flex;
+    flex-direction: column;
+}
+.buttonsecond{
+    margin:15px 0 15px 0;
+}
+img {
+    height: 250px;
+    width: 392px;
+}
+
 .card {
     background: $secondarygroundcolor;
     border-radius: 10px;

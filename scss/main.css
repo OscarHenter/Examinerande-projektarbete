@@ -116,7 +116,7 @@ nav a:hover, nav a.active {
   display: none;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 425px) {
   header {
     padding: 15px;
     position: relative;
@@ -167,7 +167,7 @@ footer {
   border-bottom: 1px solid #FF8F5C;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -347,19 +347,18 @@ th, td {
 .buttonfirst {
   background-color: #FF7A3D;
   color: black;
-  border-radius: 5px;
-  outline: none;
   border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  padding: 15px;
 }
 
 .buttonsecond {
   background-color: #1C1F28;
   border-radius: 3px;
-  outline-color: white;
+  padding: 15px;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
   border: white solid;
   color: white;
   padding-top: 10px;
@@ -386,6 +385,17 @@ th, td {
 }
 .home section {
   margin: 2%;
+}
+.home .mainbuttons {
+  display: flex;
+  flex-direction: column;
+}
+.home .buttonsecond {
+  margin: 15px 0 15px 0;
+}
+.home img {
+  height: 250px;
+  width: 392px;
 }
 .home .card {
   background: #1a1e2f;
