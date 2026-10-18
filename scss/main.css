@@ -5,6 +5,10 @@ body {
   background-color: #14161B;
 }
 
+.lead {
+  font-size: 1.125rem;
+}
+
 h1,
 h2,
 h3 {
@@ -184,13 +188,8 @@ footer {
   }
 }
 .intensity {
-  display: inline-block;
-  min-width: 1.5rem;
-  padding: 0.25rem 0.25rem;
-  border: 2px solid currentColor;
   font-family: "Barlow Condensed", sans-serif;
-  text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 .intensity--high {
   color: #FF7A3D;
@@ -207,6 +206,14 @@ footer {
   padding: 0;
   display: flex;
   gap: 1rem;
+}
+
+.legend .intensity {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 0.1rem 0.1rem;
+  border: 2px solid currentColor;
+  text-align: center;
 }
 
 .schedule__days {
