@@ -354,14 +354,18 @@ footer {
 .home .buttonsecond {
   margin: 15px 0 15px 0;
 }
-.home img {
-  height: auto;
+.home .picure {
+  height: 200px;
   max-width: 100%;
   display: block;
+  background: #2a2a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home .card {
+.home .popinfo {
   background: #1a1e2f;
-  border-radius: 10px;
+  margin: -7px;
 }
 .home .offercard {
   background: #FF7A3D;
@@ -389,5 +393,13 @@ footer {
   }
   .home .buttonfirst {
     margin: 15px 15px 15px 0;
+  }
+  .home .firstinfo {
+    display: flex;
+    flex-direction: row;
+  }
+  .home .picure {
+    display: flex;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -29,16 +29,21 @@ section{
 .buttonsecond{
     margin:15px 0 15px 0;
 }
-img {
-    height: auto;
+.picure {
+    height: 200px;
     max-width: 100%;
     display: block;
+    background: #2a2a32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.card {
+.popinfo {
     background: $secondarygroundcolor;
-    border-radius: 10px;
-    
+    margin: -7px;
+   
 }
 .offercard {
     background: $orange ;
@@ -70,6 +75,15 @@ body {
     }
     .buttonfirst{
         margin:15px 15px 15px 0;    
+    }
+    
+    .firstinfo{
+        display: flex;
+        flex-direction: row;
+    }
+    .picure{
+        display: flex;
+        justify-content: flex-end;
     }    
 }
 }
