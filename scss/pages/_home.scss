@@ -30,8 +30,9 @@ section{
     margin:15px 0 15px 0;
 }
 img {
-    height: 250px;
-    width: 392px;
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 .card {
@@ -61,5 +62,14 @@ body {
     background: $primarybackgroundcolor;
     
 }
+@media screen and (min-width: 425px) {
+    .mainbuttons{
+        display: flex;
+        flex-direction: row;
 
+    }
+    .buttonfirst{
+        margin:15px 15px 15px 0;    
+    }    
+}
 }

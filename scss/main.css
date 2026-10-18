@@ -106,7 +106,7 @@ nav a:hover, nav a.active {
   display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 580px) {
   header {
     padding: 15px;
     position: relative;
@@ -315,13 +315,13 @@ footer {
   border: none;
   font-family: "Barlow", sans-serif;
   font-weight: bold;
-  padding: 15px;
+  padding: 20px;
 }
 
 .buttonsecond {
   background-color: #1C1F28;
-  border-radius: 3px;
-  padding: 15px;
+  border-radius: 2px;
+  padding: 20px;
   font-family: "Barlow", sans-serif;
   font-weight: bold;
   border: white solid;
@@ -355,8 +355,9 @@ footer {
   margin: 15px 0 15px 0;
 }
 .home img {
-  height: 250px;
-  width: 392px;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 .home .card {
   background: #1a1e2f;
@@ -380,4 +381,13 @@ footer {
 }
 .home body {
   background: #14161B;
+}
+@media screen and (min-width: 425px) {
+  .home .mainbuttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .home .buttonfirst {
+    margin: 15px 15px 15px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
