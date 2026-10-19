@@ -331,11 +331,6 @@ footer {
 .home a {
   color: #FF8F5C;
 }
-.home a:hover {
-  color: #FF8F5C;
-  padding: 5px;
-  border-bottom: 2px solid #FF8F5C;
-}
 .home h1, .home h2, .home h3 {
   color: #F2F3F5;
   text-transform: uppercase;

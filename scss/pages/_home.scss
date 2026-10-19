@@ -5,11 +5,7 @@
 a{
     color: $linkcolor;    
 }
-a:hover{
-    color: $linkcolor;
-    padding: 5px;
-    border-bottom: 2px solid $linkcolor;
-}
+
 h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
