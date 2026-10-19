@@ -285,6 +285,18 @@ footer {
   color: #F2F3F5;
   text-transform: uppercase;
 }
+.home .headline {
+  display: flex;
+  flex-direction: column;
+}
+.home .headline h1 {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.home .orangeheadline {
+  color: #FF7A3D;
+  text-transform: uppercase;
+}
 .home .container {
   max-width: 1200px;
   margin: 0 auto;
