@@ -63,4 +63,54 @@ body {
     
 }
 
+<<<<<<< Updated upstream
+=======
+    }
+    .buttonfirst{
+        margin:15px 15px 15px 0;    
+    }
+    
+}
+@media screen and ( min-width: 580px){
+     .firstinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .picure{
+        width: 50%;
+        height: 400px;
+        display: flex;
+    }
+    .popinfo{
+        background: $secondarybackgroundcolor;
+    }
+    .offercard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .allcards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card{
+        max-width: 210px;
+        background-color: $primarybackgroundcolor;
+    }
+}
+@media screen and ( min-width: 700px){
+   .allcards{
+        display: flex;
+        gap: 12px;
+    
+    }
+    .card{
+        flex: 1 1 0;
+        min-width: 0 
+    }
+}
+>>>>>>> Stashed changes
 }
