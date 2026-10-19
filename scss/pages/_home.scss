@@ -2,14 +2,6 @@
 
 .home {
 
-a{
-    color: $linkcolor;    
-}
-a:hover{
-    color: $linkcolor;
-    padding: 5px;
-    border-bottom: 2px solid $linkcolor;
-}
 h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
@@ -29,18 +21,30 @@ section{
 .buttonsecond{
     margin:15px 0 15px 0;
 }
-img {
-    height: 250px;
-    width: 392px;
+
+.card{
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: $secondarygroundcolor;
+}
+.picure {
+    height: 200px;
+    max-width: 100%;
+    display: block;
+    background: #2a2a32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.card {
-    background: $secondarygroundcolor;
-    border-radius: 10px;
-    
+.popinfo h2{
+    padding: 15px;
 }
 .offercard {
     background: $orange ;
+    padding: 30px;
     border-radius: 10px;
     padding:10px 15px 10px 15px;
     
@@ -48,9 +52,15 @@ img {
 
 .offercard h2{
     color: $primarybackgroundcolor;
+    margin: auto;
 }
 .offercard p{
     color: $primarybackgroundcolor;
+}
+.offerbutton .buttonsecond{
+    border: none;
+    margin: auto;
+    width: 100%;
 }
 p {
     color: $textcolor;
@@ -62,5 +72,23 @@ body {
     background: $primarybackgroundcolor;
     
 }
+@media screen and (min-width: 425px) {
+    .mainbuttons{
+        display: flex;
+        flex-direction: row;
 
+    }
+    .buttonfirst{
+        margin:15px 15px 15px 0;    
+    }
+    
+    .firstinfo{
+        display: flex;
+        flex-direction: row;
+    }
+    .picure{
+        display: flex;
+        justify-content: flex-end;
+    }    
+}
 }
