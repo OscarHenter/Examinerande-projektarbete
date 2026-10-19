@@ -80,9 +80,12 @@ tr {
     margin: 0px;
 }
 
-span {
-    font-size: 0.9rem;
+.price-per-mon {
+  font-size: 0.9rem;
+  font-weight: normal;
 }
+
+
 
 .pricing-card.popular{
     padding: 0.2rem;
@@ -93,6 +96,8 @@ span {
     padding-left: 0.7rem;
     display: inline-block;
 }
+
+
 
 }
 
@@ -132,8 +137,13 @@ span {
   }
 
     td:first-child {
-    overflow-wrap: anywhere;
-
+    overflow-wrap: normal;
+    word-break: normal;
   }
+  
+  td.unlimited {
+    white-space: nowrap;
+  }
+
 }
 }

@@ -475,8 +475,9 @@ footer {
   font-weight: bold;
   margin: 0px;
 }
-.membership span {
+.membership .price-per-mon {
   font-size: 0.9rem;
+  font-weight: normal;
 }
 .membership .pricing-card.popular {
   padding: 0.2rem;
@@ -519,7 +520,11 @@ footer {
     border-collapse: collapse;
   }
   .membership td:first-child {
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .membership td.unlimited {
+    white-space: nowrap;
   }
 }
 .team-card {
