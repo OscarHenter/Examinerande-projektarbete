@@ -6,46 +6,71 @@ h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
 }
+.headline {
+    display: flex;
+    flex-direction: column;
+}
+.headline h1 {
+    font-size: 70px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+h2 {
+    font-size: 40px;
+ 
+}
+.orangeheadline{
+    color: $orange;
+    text-transform: uppercase;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     
 }
-
+.buttonfirst{
+    font-size: 18px;
+}
 .mainbuttons{
     display: flex;
     flex-direction: column;
 }
 .buttonsecond{
     margin:15px 0 15px 0;
+    font-size: 18px;
 }
 
 .card{
     border-radius: 15px;
     margin-bottom: 15px;
-    padding: 15px;
-    background: $secondarygroundcolor;
+    padding:15px 25px 15px 25px;
+    background: $secondarybackgroundcolor;
+}
+.card h3 {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
 .picure {
-    height: 200px;
-    max-width: 100%;
-    display: block;
+    height: 300px;
+    width: auto;
     background: #2a2a32;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
+.popinfo{
+    margin-bottom: 15px;
+}
 .popinfo h2{
+    font-size: 40px;
     padding: 15px;
+    margin-bottom: auto;
 }
 .offercard {
     background: $orange ;
     padding: 30px;
     border-radius: 10px;
-    padding:10px 15px 10px 15px;
-    
 }
 
 .offercard h2{
@@ -74,18 +99,11 @@ body {
     .mainbuttons{
         display: flex;
         flex-direction: row;
-
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 4dad6f50cd6cd54c7e3fd83cae08dbb899db6706
     }
     .buttonfirst{
         margin:15px 15px 15px 0;    
     }
     
-<<<<<<< HEAD
 }
 @media screen and ( min-width: 580px){
      .firstinfo{
@@ -127,17 +145,47 @@ body {
         flex: 1 1 0;
         min-width: 0 
     }
+
 }
->>>>>>> Stashed changes
-=======
-    .firstinfo{
+@media screen and ( min-width: 580px){
+     .firstinfo{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     .picure{
+        width: 50%;
+        height: 400px;
         display: flex;
-        justify-content: flex-end;
-    }    
+    }
+    .popinfo{
+        background-color: $secondarybackgroundcolor;
+    }
+    .offercard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .allcards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card{
+        max-width: 210px;
+        background-color: $primarybackgroundcolor;
+    }
 }
->>>>>>> 4dad6f50cd6cd54c7e3fd83cae08dbb899db6706
+@media screen and ( min-width: 700px){
+   .allcards{
+        display: flex;
+        gap: 12px;
+    
+    }
+    .card{
+        flex: 1 1 0;
+        min-width: 0 
+    }
+}
 }
