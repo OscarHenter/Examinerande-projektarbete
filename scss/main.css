@@ -143,6 +143,9 @@ nav a:hover, nav a.active {
   #menu-toggle:checked ~ nav {
     display: block;
   }
+  #menu-toggle:focus-visible + .hamburger {
+    outline: 3px solid #0056b3;
+  }
   header nav ul {
     flex-direction: column;
     gap: 15px;
@@ -527,8 +530,12 @@ footer {
   font-weight: bold;
   margin: 0px;
 }
-.membership span {
+.membership .price-per-mon {
   font-size: 0.9rem;
+  font-weight: normal;
+}
+.membership .mobil-only {
+  display: none;
 }
 .membership .pricing-card.popular {
   padding: 0.2rem;
@@ -547,6 +554,9 @@ footer {
     display: block;
     padding: 20px;
     box-sizing: border-box;
+  }
+  .membership .mobil-only {
+    display: inline;
   }
   .membership .cards {
     width: 100%;
@@ -571,7 +581,11 @@ footer {
     border-collapse: collapse;
   }
   .membership td:first-child {
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .membership td.unlimited {
+    white-space: nowrap;
   }
 }
 .team-card {
@@ -647,5 +661,9 @@ footer {
   }
   .card-content h2 {
     font-size: 23px;
+  }
+  .train-text p {
+    position: absolute;
+    margin-top: -1.6rem;
   }
 }/*# sourceMappingURL=main.css.map */

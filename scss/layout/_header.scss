@@ -104,6 +104,10 @@ nav {
         display: block;
     }
 
+    #menu-toggle:focus-visible + .hamburger {
+    outline: 3px solid #0056b3;
+    }
+
     header nav ul {
         flex-direction: column;
         gap: 15px;
