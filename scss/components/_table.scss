@@ -1,5 +1,65 @@
-@use "../abstracts/variables.scss" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-th, td {
-    border-top: 0.2px solid grey;
+.schedule-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  th[scope='row'] {
+    display: block;
+    text-align: left;
+    font-family: $font-heading;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  td {
+    display: flex;
+    grid-template-columns: 8ch 1fr auto;
+    gap: 0.5rem;
+    padding: 0.25rem 1rem;
+
+    &::before {
+      content: attr(data-cell);
+      font-weight: 700;
+    }
+  }
+
+  @include respond-up($bp-tablet) {
+    thead {
+      display: table-header-group;
+    }
+
+    tr {
+      display: table-row;
+      margin-bottom: 0;
+    }
+
+    th,
+    td {
+      display: table-cell;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-top: 0.2px solid grey;
+    }
+
+    th[scope='row'] {
+      font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    td::before {
+      content: none;
+    }
+  }
 }
