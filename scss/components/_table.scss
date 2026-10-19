@@ -3,7 +3,8 @@
 
 .schedule-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 
   thead {
     display: none;
@@ -19,14 +20,14 @@
     text-align: left;
     font-family: $font-heading;
     font-size: 1.25rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 
   td {
-    display: grid;
-    grid-template-columns: 8ch auto;
+    display: flex;
+    grid-template-columns: 8ch 1fr auto;
     gap: 0.5rem;
-    padding: 0.25rem 0;
+    padding: 0.25rem 1rem;
 
     &::before {
       content: attr(data-cell);
@@ -54,6 +55,7 @@
 
     th[scope='row'] {
       font-size: 1rem;
+        padding: 0.75rem 1rem;
     }
 
     td::before {
