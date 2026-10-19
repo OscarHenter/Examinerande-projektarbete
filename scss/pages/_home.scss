@@ -6,6 +6,18 @@ h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
 }
+.headline {
+  display: flex;
+  flex-direction: column;
+}
+.headline h1 {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.orangeheadline{
+    color: $orange;
+    text-transform: uppercase;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
