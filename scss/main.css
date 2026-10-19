@@ -5,6 +5,10 @@ body {
   background-color: #14161B;
 }
 
+.lead {
+  font-size: 1.125rem;
+}
+
 h1,
 h2,
 h3 {
@@ -116,7 +120,7 @@ nav a:hover, nav a.active {
   display: none;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 580px) {
   header {
     padding: 15px;
     position: relative;
@@ -152,6 +156,7 @@ footer {
   font-size: 0.85rem;
   border-top: 0.2px solid #39443e;
   align-items: center;
+  padding: 50px;
 }
 
 .puls-träningsstudio-footer {
@@ -167,7 +172,7 @@ footer {
   border-bottom: 1px solid #FF8F5C;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -184,13 +189,8 @@ footer {
   }
 }
 .intensity {
-  display: inline-block;
-  min-width: 1.5rem;
-  padding: 0.25rem 0.25rem;
-  border: 2px solid currentColor;
   font-family: "Barlow Condensed", sans-serif;
-  text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 .intensity--high {
   color: #FF7A3D;
@@ -202,11 +202,48 @@ footer {
   color: #4CD0AD;
 }
 
-.schedule .legend {
+.legend {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 1rem;
+}
+
+.legend .intensity {
+  display: inline-block;
+  min-width: 1.5rem;
+  padding: 0.1rem 0.1rem;
+  border: 2px solid currentColor;
+  text-align: center;
+}
+
+.schedule__days {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .schedule__days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.schedule__day {
+  padding: 1rem;
+  border: 1px solid #F2F3F5;
+}
+
+.schedule__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+th, td {
+  border-top: 0.2px solid grey;
 }
 
 .membership .cards {
@@ -318,47 +355,149 @@ footer {
 .buttonfirst {
   background-color: #FF7A3D;
   color: black;
-  border-radius: 5px;
-  outline: none;
   border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  padding: 15px;
 }
 
 .buttonsecond {
   background-color: #1C1F28;
   border-radius: 3px;
-  outline-color: white;
+  padding: 15px;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
   border: white solid;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-header {
-  padding: 20px;
+.home a {
+  color: #FF8F5C;
+}
+.home a:hover {
+  color: #FF8F5C;
+  padding: 5px;
+  border-bottom: 2px solid #FF8F5C;
+}
+.home h1, .home h2, .home h3 {
+  color: #F2F3F5;
+  text-transform: uppercase;
+}
+.home .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home section {
+  margin: 2%;
+}
+.home .mainbuttons {
+  display: flex;
+  flex-direction: column;
+}
+.home .buttonsecond {
+  margin: 15px 0 15px 0;
+}
+.home img {
+  height: 250px;
+  width: 392px;
+}
+.home .card {
+  background: #1a1e2f;
+  border-radius: 10px;
+}
+.home .offercard {
+  background: #FF7A3D;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+.home .offercard h2 {
+  color: #14161B;
+}
+.home .offercard p {
+  color: #14161B;
+}
+.home p {
+  color: #C9CCD3;
+}
+.home .orangetext {
+  color: #FF7A3D;
+}
+.home body {
+  background: #14161B;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #1c1f28;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.portrait {
+  height: 270px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2b2f38;
+  color: #c4c6ce;
+  font-size: 15px;
+}
+
+.train-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.2px solid grey;
+  gap: 24px;
+  background-color: #1c1f28;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 35px;
+  border-radius: 6px;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2rem;
+.tag {
+  border: solid grey;
+  border-radius: 20px;
+  border-width: 0.1px;
+  padding: 5px;
 }
 
-.logo {
+.card-content {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 24px 22px 20px;
+  min-width: 0;
 }
-.logo p {
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.logo p:last-child {
-  font-size: 24px;
+
+@media screen and (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .portrait {
+    height: 240px;
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .card-content h2 {
+    font-size: 23px;
+  }
 }/*# sourceMappingURL=main.css.map */

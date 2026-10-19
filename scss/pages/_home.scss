@@ -1,38 +1,66 @@
+@use "../abstracts/variables" as *;
 
-@use '../abstracts/variables' as *;
+.home {
 
-header {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.2px solid grey;
+a{
+    color: $linkcolor;    
 }
-
-nav ul{
-    list-style-type: none;
+a:hover{
+    color: $linkcolor;
+    padding: 5px;
+    border-bottom: 2px solid $linkcolor;
+}
+h1, h2, h3 {
+    color: $titlecolor;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+section{
+    margin: 2%;
+}
+.mainbuttons{
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+}
+.buttonsecond{
+    margin:15px 0 15px 0;
+}
+img {
+    height: 250px;
+    width: 392px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    p{
-        text-transform: uppercase;
-        line-height: 1.2;
-    }
-
-    p:first-child {
-        font-weight: 1000;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    p:last-child {
-        font-size: 24px;
-    }
+.card {
+    background: $secondarygroundcolor;
+    border-radius: 10px;
+    
+}
+.offercard {
+    background: $orange ;
+    border-radius: 10px;
+    padding:10px 15px 10px 15px;
+    
 }
 
+.offercard h2{
+    color: $primarybackgroundcolor;
+}
+.offercard p{
+    color: $primarybackgroundcolor;
+}
+p {
+    color: $textcolor;
+}
+.orangetext {
+    color: $orange;
+}
+body {
+    background: $primarybackgroundcolor;
+    
+}
+
+}
