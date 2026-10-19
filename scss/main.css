@@ -117,7 +117,7 @@ nav a:hover, nav a.active {
 }
 
 #menu-toggle:focus-visible + .hamburger {
-  outline: 3px solid #ff7838;
+  outline: 3px solid #ff7838; /* Måste ändra färg så den är samma för alla */
 }
 
 .hamburger {
@@ -198,7 +198,8 @@ footer {
   border: none;
   font-family: "Barlow", sans-serif;
   font-weight: bold;
-  padding: 15px;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .buttonsecond {
@@ -213,6 +214,7 @@ footer {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 5px;
 }
 
 .intensity {
@@ -572,6 +574,10 @@ footer {
   flex: 1;
   padding: 24px 22px 20px;
   min-width: 0;
+}
+
+.role {
+  color: #FF8F5C;
 }
 
 @media screen and (max-width: 768px) {
