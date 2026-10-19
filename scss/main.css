@@ -334,6 +334,10 @@ footer {
   padding: 15px 25px 15px 25px;
   background: #1c1f2a;
 }
+.home :focus-visible {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+}
 .home .card h3 {
   font-size: 30px;
   margin-top: -5px;
