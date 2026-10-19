@@ -96,18 +96,14 @@ nav a:hover, nav a.active {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #F2F3F5;
+  text-decoration: none;
 }
-.logo p {
+.logo__text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.2;
-}
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.logo p:last-child {
-  font-size: 24px;
 }
 
 #menu-toggle {
@@ -157,6 +153,21 @@ nav a:hover, nav a.active {
     margin: 0;
   }
 }
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
