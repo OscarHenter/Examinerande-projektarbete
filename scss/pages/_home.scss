@@ -52,16 +52,16 @@ h2 {
     margin-bottom: -5px;
 }
 .picure {
-    height: 200px;
-    max-width: 100%;
-    display: block;
+    height: 300px;
+    width: auto;
     background: #2a2a32;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
+.popinfo{
+    margin-bottom: 15px;
+}
 .popinfo h2{
     font-size: 40px;
     padding: 15px;
@@ -71,8 +71,6 @@ h2 {
     background: $orange ;
     padding: 30px;
     border-radius: 10px;
-    padding:10px 15px 10px 15px;
-    
 }
 
 .offercard h2{
@@ -107,13 +105,45 @@ body {
         margin:15px 15px 15px 0;    
     }
     
-    .firstinfo{
+}
+@media screen and ( min-width: 580px){
+     .firstinfo{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     .picure{
+        width: 50%;
+        height: 400px;
         display: flex;
-        justify-content: flex-end;
-    }    
+    }
+    .popinfo{
+        background-color: rgb(50, 47, 59);
+    }
+    .offercard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .allcards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .card{
+        max-width: 210px;
+    }
+}
+@media screen and ( min-width: 700px){
+   .allcards{
+        display: flex;
+        gap: 12px;
+    
+    }
+    .card{
+        flex: 1 1 0;
+        min-width: 0 
+    }
 }
 }
