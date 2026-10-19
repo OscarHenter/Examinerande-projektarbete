@@ -116,6 +116,10 @@ nav a:hover, nav a.active {
   pointer-events: none;
 }
 
+#menu-toggle:focus-visible + .hamburger {
+  outline: 3px solid #ff7838;
+}
+
 .hamburger {
   display: none;
 }
