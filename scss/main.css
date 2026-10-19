@@ -117,7 +117,7 @@ nav a:hover, nav a.active {
 }
 
 #menu-toggle:focus-visible + .hamburger {
-  outline: 3px solid #ff7838;
+  outline: 3px solid #ff7838; /* Måste ändra färg så den är samma för alla */
 }
 
 .hamburger {
