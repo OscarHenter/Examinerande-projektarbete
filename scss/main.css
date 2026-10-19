@@ -96,18 +96,14 @@ nav a:hover, nav a.active {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #F2F3F5;
+  text-decoration: none;
 }
-.logo p {
+.logo__text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.2;
-}
-.logo p:first-child {
-  font-weight: 1000;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-.logo p:last-child {
-  font-size: 24px;
 }
 
 #menu-toggle {
@@ -154,6 +150,21 @@ nav a:hover, nav a.active {
     margin: 0;
   }
 }
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -197,7 +208,6 @@ footer {
   color: black;
   border: none;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
   padding: 20px;
   border-radius: 5px;
 }
@@ -207,11 +217,8 @@ footer {
   border-radius: 2px;
   padding: 20px;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
   border: white solid;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
@@ -292,8 +299,12 @@ footer {
   flex-direction: column;
 }
 .home .headline h1 {
+  font-size: 70px;
   margin-bottom: auto;
   margin-top: auto;
+}
+.home h2 {
+  font-size: 40px;
 }
 .home .orangeheadline {
   color: #FF7A3D;
@@ -303,18 +314,27 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
+.home .buttonfirst {
+  font-size: 18px;
+}
 .home .mainbuttons {
   display: flex;
   flex-direction: column;
 }
 .home .buttonsecond {
   margin: 15px 0 15px 0;
+  font-size: 18px;
 }
 .home .card {
   border-radius: 15px;
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   background: #1a1e2f;
+}
+.home .card h3 {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 .home .picure {
   height: 200px;
@@ -326,7 +346,9 @@ footer {
   align-items: center;
 }
 .home .popinfo h2 {
+  font-size: 40px;
   padding: 15px;
+  margin-bottom: auto;
 }
 .home .offercard {
   background: #FF7A3D;

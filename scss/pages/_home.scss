@@ -7,12 +7,17 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 .headline {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .headline h1 {
+    font-size: 70px;
     margin-bottom: auto;
     margin-top: auto;
+}
+h2 {
+    font-size: 40px;
+ 
 }
 .orangeheadline{
     color: $orange;
@@ -23,20 +28,28 @@ h1, h2, h3 {
     margin: 0 auto;
     
 }
-
+.buttonfirst{
+    font-size: 18px;
+}
 .mainbuttons{
     display: flex;
     flex-direction: column;
 }
 .buttonsecond{
     margin:15px 0 15px 0;
+    font-size: 18px;
 }
 
 .card{
     border-radius: 15px;
     margin-bottom: 15px;
-    padding: 15px;
+    padding:15px 25px 15px 25px;
     background: $secondarygroundcolor;
+}
+.card h3 {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
 .picure {
     height: 200px;
@@ -50,7 +63,9 @@ h1, h2, h3 {
 }
 
 .popinfo h2{
+    font-size: 40px;
     padding: 15px;
+    margin-bottom: auto;
 }
 .offercard {
     background: $orange ;
