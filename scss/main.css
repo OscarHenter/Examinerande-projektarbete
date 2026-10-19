@@ -564,6 +564,10 @@ footer {
   min-width: 0;
 }
 
+.role {
+  color: #FF8F5C;
+}
+
 @media screen and (max-width: 768px) {
   .team-grid {
     grid-template-columns: 1fr;
