@@ -127,6 +127,7 @@ body {
         justify-content: space-between;
     } 
     .allcards{
+        background-color: $primarybackgroundcolor;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
