@@ -332,7 +332,7 @@ footer {
   border-radius: 15px;
   margin-bottom: 15px;
   padding: 15px 25px 15px 25px;
-  background: #1a1e2f;
+  background: #1c1f2a;
 }
 .home .card h3 {
   font-size: 30px;
@@ -381,7 +381,7 @@ footer {
 .home body {
   background: #14161B;
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
   .home .mainbuttons {
     display: flex;
     flex-direction: row;
@@ -402,7 +402,12 @@ footer {
     display: flex;
   }
   .home .popinfo {
-    background-color: #1a1e2f;
+    background: #1c1f2a;
+    padding: 25px;
+    margin: 30px -20px 30px -20px;
+  }
+  .home .popinfo h2 {
+    padding: none;
   }
   .home .offercard {
     display: flex;
@@ -416,13 +421,14 @@ footer {
     justify-content: space-evenly;
   }
   .home .card {
-    max-width: 210px;
+    max-width: 200px;
+    background-color: #14161B;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 780px) {
   .home .allcards {
     display: flex;
-    gap: 12px;
+    gap: 10px;
   }
   .home .card {
     flex: 1 1 0;
@@ -453,7 +459,7 @@ footer {
 }
 
 .schedule-table thead th {
-  background-color: #1a1e2f;
+  background-color: #1c1f2a;
 }
 
 .schedule-table caption {
@@ -461,7 +467,7 @@ footer {
   border: 0.2px solid grey;
   border-bottom: none;
   padding: 0.75rem 1rem;
-  background-color: #1a1e2f;
+  background-color: #1c1f2a;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;

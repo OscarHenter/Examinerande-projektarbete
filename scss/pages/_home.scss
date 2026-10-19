@@ -95,7 +95,7 @@ body {
     background: $primarybackgroundcolor;
     
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
     .mainbuttons{
         display: flex;
         flex-direction: row;
@@ -118,6 +118,11 @@ body {
     }
     .popinfo{
         background: $secondarybackgroundcolor;
+        padding: 25px;
+        margin:30px -20px 30px -20px;
+    }
+    .popinfo h2{
+        padding: none;
     }
     .offercard{
         display: flex;
@@ -131,56 +136,14 @@ body {
         justify-content: space-evenly;
     }
     .card{
-        max-width: 210px;
+        max-width: 200px;
         background-color: $primarybackgroundcolor;
     }
 }
-@media screen and ( min-width: 700px){
+@media screen and ( min-width: 780px){
    .allcards{
         display: flex;
-        gap: 12px;
-    
-    }
-    .card{
-        flex: 1 1 0;
-        min-width: 0 
-    }
-
-}
-@media screen and ( min-width: 580px){
-     .firstinfo{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .picure{
-        width: 50%;
-        height: 400px;
-        display: flex;
-    }
-    .popinfo{
-        background-color: #47475d;
-    }
-    .offercard{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    } 
-    .allcards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .card{
-        max-width: 210px;
-        background-color: $primarybackgroundcolor;
-    }
-}
-@media screen and ( min-width: 700px){
-   .allcards{
-        display: flex;
-        gap: 12px;
+        gap: 10px;
     
     }
     .card{
