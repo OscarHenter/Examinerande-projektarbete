@@ -479,6 +479,9 @@ footer {
   font-size: 0.9rem;
   font-weight: normal;
 }
+.membership .mobil-only {
+  display: none;
+}
 .membership .pricing-card.popular {
   padding: 0.2rem;
   background-color: #FF7A3D;
@@ -496,6 +499,9 @@ footer {
     display: block;
     padding: 20px;
     box-sizing: border-box;
+  }
+  .membership .mobil-only {
+    display: inline;
   }
   .membership .cards {
     width: 100%;
