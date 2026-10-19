@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puls Schema</title>
-    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet" href="scss/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,13 +17,15 @@
                 <p>puls</p>
             </div>
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
         <nav aria-label="Huvudmeny">
             <ul>
-                <li><a href="#">Start</a></li>
-                <li><a href="#">Schema</a></li>
-                <li><a href="#">Medlemskap</a></li>
-                <li><a href="#">Tränare</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="home.html">Start</a></li>
+                <li><a href="schedule.html">Schema</a></li>
+                <li><a href="medlemskap.html">Medlemskap</a></li>
+                <li><a href="Tränare.html">Tränare</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
             </ul>
     </header>
 
@@ -100,12 +102,9 @@
         </section>                           
     </div>
     <footer>
-        <p>puls träningsstudio</p>
-        <p>Industrigatan 18, 123 45 Hamnstad</p>
-        <p>010-765 43 21</p>
-        <p>Bemannat vardagar 6-21</p>
-        <p>Öppet för medlammar 05-23</p>
+        <p class="puls-träningsstudio-footer">puls träningsstudio</p>
+        <p class="adress-footer">Industrigatan 18, 123 45 Hamnstadbr<br><a href="nummer" class="nummer">010-765 43 21</a></p>
+        <p class="dagar-footer">Bemannat vardagar 6-21<br>Öppet för medlammar 05-23</p>
     </footer>
-
 </body>
 </html>
