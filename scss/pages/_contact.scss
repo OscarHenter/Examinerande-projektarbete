@@ -1,8 +1,69 @@
-@use "../abstracts/variables" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-.home {
+// Kartan
+iframe {
+  border-radius: 4px;
+}
 
+// Kontaktinfo: jämn margin mellan adress, telefon, mail
+.contactinfo p,
+.contactinfo div {
+  margin-bottom: 0.5rem;
+}
 
+// Mer luft före bemannade tider
+.bemannade-tider {
+  margin-top: 2rem;
+  width: 100%;
+}
 
-    
+th {
+    text-align: left;
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: $titlecolor;
+    font-weight: 700;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.2px solid grey;
+  padding: 0.5rem 0;
+}
+
+// Formuläret
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.persinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+// Tvåkolumnslayout på desktop, bara på kontaktsidan
+@include respond-up($bp-tablet) {
+  .contact-page .container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .contact {
+    flex: 1;
+  }
+
+  .yourinfo {
+    flex: 1;
+    background-color: $secondarygroundcolor;
+    padding: 1.5rem;
+    border-radius: 4px;
+  }
+}
+input, textarea {
+    border: 0.02rem solid gray;
+    border-radius: 4px;
 }
