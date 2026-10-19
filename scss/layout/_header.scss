@@ -52,19 +52,14 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    p{
+    color: $titlecolor;
+    text-decoration: none;
+
+    &__text {
+        font-family: $font-heading;
+        font-size: 2rem;
+        font-weight: 700;
         text-transform: uppercase;
-        line-height: 1.2;
-    }
-
-    p:first-child {
-        font-weight: 1000;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    p:last-child {
-        font-size: 24px;
     }
 }
 
@@ -115,4 +110,19 @@ nav {
         padding: 20px;
         margin: 0;
     }
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
