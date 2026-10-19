@@ -607,4 +607,8 @@ footer {
   .card-content h2 {
     font-size: 23px;
   }
+  .train-text p {
+    position: absolute;
+    margin-top: -1.6rem;
+  }
 }/*# sourceMappingURL=main.css.map */
