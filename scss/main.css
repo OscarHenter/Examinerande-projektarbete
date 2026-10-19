@@ -337,13 +337,15 @@ footer {
   margin-bottom: -5px;
 }
 .home .picure {
-  height: 200px;
-  max-width: 100%;
-  display: block;
+  height: 300px;
+  width: auto;
   background: #2a2a32;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .popinfo {
+  margin-bottom: 15px;
 }
 .home .popinfo h2 {
   font-size: 40px;
@@ -354,7 +356,6 @@ footer {
   background: #FF7A3D;
   padding: 30px;
   border-radius: 10px;
-  padding: 10px 15px 10px 15px;
 }
 .home .offercard h2 {
   color: #14161B;
@@ -385,13 +386,44 @@ footer {
   .home .buttonfirst {
     margin: 15px 15px 15px 0;
   }
+}
+@media screen and (min-width: 580px) {
   .home .firstinfo {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .home .picure {
+    width: 50%;
+    height: 400px;
     display: flex;
-    justify-content: flex-end;
+  }
+  .home .popinfo {
+    background-color: rgb(50, 47, 59);
+  }
+  .home .offercard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home .allcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .home .card {
+    max-width: 210px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .home .allcards {
+    display: flex;
+    gap: 12px;
+  }
+  .home .card {
+    flex: 1 1 0;
+    min-width: 0;
   }
 }
 
