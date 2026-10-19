@@ -192,9 +192,31 @@ footer {
     font-size: 18px;
   }
 }
+.buttonfirst {
+  background-color: #FF7A3D;
+  color: black;
+  border: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.buttonsecond {
+  background-color: #1C1F28;
+  border-radius: 2px;
+  padding: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  border: white solid;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .intensity {
   font-family: "Barlow Condensed", sans-serif;
-  border-radius: 4px;
 }
 .intensity--high {
   color: #FF7A3D;
@@ -204,6 +226,140 @@ footer {
 }
 .intensity--low {
   color: #4CD0AD;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.schedule-table thead {
+  display: none;
+}
+.schedule-table tr {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.schedule-table th[scope=row] {
+  display: block;
+  text-align: left;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+.schedule-table td {
+  display: flex;
+  grid-template-columns: 8ch 1fr auto;
+  gap: 0.5rem;
+  padding: 0.25rem 1rem;
+}
+.schedule-table td::before {
+  content: attr(data-cell);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .schedule-table thead {
+    display: table-header-group;
+  }
+  .schedule-table tr {
+    display: table-row;
+    margin-bottom: 0;
+  }
+  .schedule-table th,
+  .schedule-table td {
+    display: table-cell;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-top: 0.2px solid grey;
+  }
+  .schedule-table th[scope=row] {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  .schedule-table td::before {
+    content: none;
+  }
+}
+
+.home h1, .home h2, .home h3 {
+  color: #F2F3F5;
+  text-transform: uppercase;
+}
+.home .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home section {
+  margin: 2%;
+}
+.home .mainbuttons {
+  display: flex;
+  flex-direction: column;
+}
+.home .buttonsecond {
+  margin: 15px 0 15px 0;
+}
+.home .card {
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #1a1e2f;
+}
+.home .picure {
+  height: 200px;
+  max-width: 100%;
+  display: block;
+  background: #2a2a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .popinfo h2 {
+  padding: 15px;
+}
+.home .offercard {
+  background: #FF7A3D;
+  padding: 30px;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+.home .offercard h2 {
+  color: #14161B;
+  margin: auto;
+}
+.home .offercard p {
+  color: #14161B;
+}
+.home .offerbutton .buttonsecond {
+  border: none;
+  margin: auto;
+  width: 100%;
+}
+.home p {
+  color: #C9CCD3;
+}
+.home .orangetext {
+  color: #FF7A3D;
+}
+.home body {
+  background: #14161B;
+}
+@media screen and (min-width: 425px) {
+  .home .mainbuttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .home .buttonfirst {
+    margin: 15px 15px 15px 0;
+  }
+  .home .firstinfo {
+    display: flex;
+    flex-direction: row;
+  }
+  .home .picure {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .legend {
@@ -219,35 +375,32 @@ footer {
   padding: 0.1rem 0.1rem;
   border: 2px solid currentColor;
   text-align: center;
+  border-radius: 4px;
 }
 
-.schedule__days {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-@media (min-width: 768px) {
-  .schedule__days {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
+.schedule-table {
+  margin-top: 20px;
+  border: 0.2px solid grey;
+  border-radius: 0 0 4px 4px;
 }
 
-.schedule__day {
-  padding: 1rem;
-  border: 1px solid #F2F3F5;
+.schedule-table thead th {
+  background-color: #1a1e2f;
 }
 
-.schedule__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-th, td {
-  border-top: 0.2px solid grey;
+.schedule-table caption {
+  text-align: left;
+  border: 0.2px solid grey;
+  border-bottom: none;
+  padding: 0.75rem 1rem;
+  background-color: #1a1e2f;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border: 0.2px solid grey;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
 }
 
 .membership .cards {
@@ -356,93 +509,6 @@ th, td {
     overflow-wrap: anywhere;
   }
 }
-.buttonfirst {
-  background-color: #FF7A3D;
-  color: black;
-  border: none;
-  font-family: "Barlow", sans-serif;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.buttonsecond {
-  background-color: #1C1F28;
-  border-radius: 2px;
-  padding: 20px;
-  font-family: "Barlow", sans-serif;
-  font-weight: bold;
-  border: white solid;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.home h1, .home h2, .home h3 {
-  color: #F2F3F5;
-  text-transform: uppercase;
-}
-.home .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.home section {
-  margin: 2%;
-}
-.home .mainbuttons {
-  display: flex;
-  flex-direction: column;
-}
-.home .buttonsecond {
-  margin: 15px 0 15px 0;
-}
-.home .card {
-  border-radius: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
-  background: #1a1e2f;
-}
-.home .picure {
-  height: 200px;
-  max-width: 100%;
-  display: block;
-  background: #2a2a32;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home .popinfo h2 {
-  padding: 15px;
-}
-.home .offercard {
-  background: #FF7A3D;
-  padding: 30px;
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
-}
-.home .offercard h2 {
-  color: #14161B;
-  margin: auto;
-}
-.home .offercard p {
-  color: #14161B;
-}
-.home .offerbutton .buttonsecond {
-  border: none;
-  margin: auto;
-  width: 100%;
-}
-.home p {
-  color: #C9CCD3;
-}
-.home .orangetext {
-  color: #FF7A3D;
-}
-.home body {
-  background: #14161B;
-}
-
 .team-card {
   display: flex;
   flex-direction: column;
@@ -513,5 +579,4 @@ th, td {
   .card-content h2 {
     font-size: 23px;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
