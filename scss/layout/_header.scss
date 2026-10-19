@@ -52,26 +52,25 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    p{
+    color: $titlecolor;
+    text-decoration: none;
+
+    &__text {
+        font-family: $font-heading;
+        font-size: 2rem;
+        font-weight: 700;
         text-transform: uppercase;
-        line-height: 1.2;
-    }
-
-    p:first-child {
-        font-weight: 1000;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    p:last-child {
-        font-size: 24px;
     }
 }
-
+//* test
 #menu-toggle {
     position: absolute;
     opacity: 0;
     pointer-events: none;
+}
+
+#menu-toggle:focus-visible + .hamburger {
+    outline: 3px solid #ff7838;  /* Måste ändra färg så den är samma för alla */
 }
 
 .hamburger {
@@ -105,10 +104,29 @@ nav {
         display: block;
     }
 
+    #menu-toggle:focus-visible + .hamburger {
+    outline: 3px solid #0056b3;
+    }
+
     header nav ul {
         flex-direction: column;
         gap: 15px;
         padding: 20px;
         margin: 0;
     }
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }

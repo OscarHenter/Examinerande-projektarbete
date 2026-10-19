@@ -16,7 +16,7 @@
 
 .card {
     &:nth-child(2) {
-    border: 2px solid #FF7A3D;
+    border: 2px solid $puls-button;
     }
 }
 
@@ -80,8 +80,13 @@ tr {
     margin: 0px;
 }
 
-span {
-    font-size: 0.9rem;
+.price-per-mon {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.mobil-only {
+  display: none;
 }
 
 .pricing-card.popular{
@@ -94,6 +99,8 @@ span {
     display: inline-block;
 }
 
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -104,6 +111,10 @@ span {
     display: block;
     padding: 20px;
     box-sizing: border-box;
+  }
+
+  .mobil-only {
+    display: inline;
   }
 
   .cards {
@@ -132,8 +143,13 @@ span {
   }
 
     td:first-child {
-    overflow-wrap: anywhere;
-
+    overflow-wrap: normal;
+    word-break: normal;
   }
+  
+  td.unlimited {
+    white-space: nowrap;
+  }
+
 }
 }

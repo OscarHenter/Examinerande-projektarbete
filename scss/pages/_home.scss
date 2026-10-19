@@ -2,14 +2,6 @@
 
 .home {
 
-a{
-    color: $linkcolor;    
-}
-a:hover{
-    color: $linkcolor;
-    padding: 5px;
-    border-bottom: 2px solid $linkcolor;
-}
 h1, h2, h3 {
     color: $titlecolor;
     text-transform: uppercase;
@@ -19,9 +11,7 @@ h1, h2, h3 {
     margin: 0 auto;
     
 }
-section{
-    margin: 2%;
-}
+
 .mainbuttons{
     display: flex;
     flex-direction: column;
@@ -29,18 +19,30 @@ section{
 .buttonsecond{
     margin:15px 0 15px 0;
 }
-img {
-    height: 250px;
-    width: 392px;
+
+.card{
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: $secondarygroundcolor;
+}
+.picure {
+    height: 200px;
+    max-width: 100%;
+    display: block;
+    background: #2a2a32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.card {
-    background: $secondarygroundcolor;
-    border-radius: 10px;
-    
+.popinfo h2{
+    padding: 15px;
 }
 .offercard {
     background: $orange ;
+    padding: 30px;
     border-radius: 10px;
     padding:10px 15px 10px 15px;
     
@@ -48,9 +50,15 @@ img {
 
 .offercard h2{
     color: $primarybackgroundcolor;
+    margin: auto;
 }
 .offercard p{
     color: $primarybackgroundcolor;
+}
+.offerbutton .buttonsecond{
+    border: none;
+    margin: auto;
+    width: 100%;
 }
 p {
     color: $textcolor;
@@ -62,14 +70,22 @@ body {
     background: $primarybackgroundcolor;
     
 }
+@media screen and (min-width: 425px) {
+    .mainbuttons{
+        display: flex;
+        flex-direction: row;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 4dad6f50cd6cd54c7e3fd83cae08dbb899db6706
     }
     .buttonfirst{
         margin:15px 15px 15px 0;    
     }
     
+<<<<<<< HEAD
 }
 @media screen and ( min-width: 580px){
      .firstinfo{
@@ -113,4 +129,15 @@ body {
     }
 }
 >>>>>>> Stashed changes
+=======
+    .firstinfo{
+        display: flex;
+        flex-direction: row;
+    }
+    .picure{
+        display: flex;
+        justify-content: flex-end;
+    }    
+}
+>>>>>>> 4dad6f50cd6cd54c7e3fd83cae08dbb899db6706
 }
