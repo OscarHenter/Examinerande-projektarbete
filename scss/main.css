@@ -616,14 +616,17 @@ footer {
 }
 
 .portrait {
-  height: 270px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2b2f38;
-  color: #c4c6ce;
-  font-size: 15px;
+  height: 280px;
+  overflow: hidden;
+}
+.portrait img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 20%;
+     object-position: center 20%;
 }
 
 .train-div {
@@ -676,4 +679,95 @@ footer {
     position: absolute;
     margin-top: -1.6rem;
   }
+}
+iframe {
+  border-radius: 4px;
+}
+
+.contactinfo p,
+.contactinfo div {
+  margin-bottom: 0.5rem;
+}
+
+.bemannade-tider {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #F2F3F5;
+  font-weight: 700;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.2px solid grey;
+  padding: 0.5rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.persinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contact-page .container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .persinfo input[type=submit] {
+    width: auto;
+  }
+  .contact {
+    flex: 1;
+  }
+  .yourinfo {
+    flex: 1;
+    background-color: #1c1f2a;
+    padding: 1.5rem;
+    border-radius: 4px;
+  }
+}
+input, textarea {
+  border: 0.02rem solid gray;
+  border-radius: 4px;
+}
+
+.card h2 {
+  margin: 0.5rem;
+  font-size: 500;
+}
+
+.persinfo input,
+.persinfo textarea {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.75rem;
+}
+
+.radio {
+  color: #FF7A3D;
+}
+
+.persinfo textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.persinfo input[type=submit] {
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.25rem;
 }/*# sourceMappingURL=main.css.map */
