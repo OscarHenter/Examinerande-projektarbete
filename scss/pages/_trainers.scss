@@ -30,6 +30,11 @@
   }
 }
 
+:focus-visible {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;  
+}
+
 .train-div {
     display: flex;
     align-items: center;
