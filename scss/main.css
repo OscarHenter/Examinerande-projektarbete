@@ -535,6 +535,10 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.membership .description {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
 .membership .price {
   font-size: 3.5rem;
   font-weight: bold;
@@ -555,6 +559,7 @@ footer {
   padding-right: 0.7rem;
   padding-left: 0.7rem;
   display: inline-block;
+  width: 75px;
 }
 
 @media screen and (max-width: 768px) {

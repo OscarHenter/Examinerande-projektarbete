@@ -74,6 +74,12 @@ tr {
     font-weight: bold;
 }
 
+.description {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+
 .price {
     font-size: 3.5rem;
     font-weight: bold; 
@@ -97,7 +103,9 @@ tr {
     padding-right: 0.7rem;
     padding-left: 0.7rem;
     display: inline-block;
+    width: 75px;
 }
+
 
 
 
