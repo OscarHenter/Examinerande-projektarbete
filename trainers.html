@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Skip to main content</a>
+        <a href="index.html" class="logo">
+            <svg aria-hidden="true" fill="#FF7A3D" width="50px" height="50px" viewBox="-4.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#FF7A3D"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>heartbeat</title> <path d="M10.24 23.84c-0.040 0-0.040 0-0.080 0-0.4-0.040-0.72-0.36-0.76-0.76l-1-9.96-0.88 2.72c-0.12 0.36-0.44 0.56-0.8 0.56h-5.88c-0.48 0-0.84-0.36-0.84-0.8s0.36-0.84 0.84-0.84h5.32l1.92-6c0.12-0.36 0.48-0.6 0.88-0.56s0.68 0.36 0.72 0.76l0.96 9.72 2.040-6.96c0.12-0.36 0.4-0.6 0.8-0.6 0.36 0 0.68 0.28 0.8 0.64l1.12 4.84 0.84-1.24c0.16-0.24 0.4-0.36 0.68-0.36h5.28c0.44 0 0.84 0.36 0.84 0.84 0 0.44-0.36 0.84-0.84 0.84h-4.84l-1.64 2.44c-0.2 0.28-0.52 0.4-0.84 0.36s-0.6-0.32-0.64-0.64l-0.84-3.6-2.36 8.080c-0.12 0.28-0.44 0.52-0.8 0.52z"></path> </g></svg>
+            <span class="logo__text">puls</span>
+        </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+        <nav aria-label="Huvudmeny">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="schedule.html">Schema</a></li>
+                <li><a href="medlemskap.html">Medlemskap</a></li>
+                <li><a href="trainers.html">Tränare</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="container">
+            <h1>Våra tränare</h1>
+            <p class="lead">
+            Licensierade instruktörer och PT:s som hjälper dig komma igång - och hålla i.
+            </p>
+            <section class="team-grid">
+                <article class="team-card">
+                    <div class="portrait">
+                        <img src="https://performanceforhealth.com/wp-content/uploads/2026/02/Nate-800x800-1.jpg" alt="Amir Kadir, personlig tränare">
+                    </div>
+                    <div class="card-content">
+                        <h2>amir Kadir</h2>
+                        <p class="role">PT · Styrka</p>
+                        <p class="description">Hjälper nybörjare bygga styrka med säker teknik.</p>
+                    <div class="tags">
+                        <span class="tag">Styrka bas</span>
+                    </div>
+                    </div>
+                </article>
+                
+                <article class="team-card">
+                    <div class="portrait">
+                        <img src="https://performanceforhealth.com/wp-content/uploads/2026/02/Beth-800x800-1.jpg" alt="Johanna Ek, personlig tränare">
+                    </div>
+                    <div class="card-content">
+                        <h2>johanna ek</h2>
+                        <p class="role">Instruktör · Kondition</p>
+                        <p class="description">Tidigare friidrottare som älskar höga pulser.</p>
+                    <div class="tags">
+                        <span class="tag">Puls HIIT</span>
+                        <span class="tag">Cykel</span>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="team-card">
+                    <div class="portrait">
+                        <img src="https://performanceforhealth.com/wp-content/uploads/2026/02/Kelsey-800x800-1.jpg" alt="Lina Park, personlig tränare">
+                    </div>
+                    <div class="card-content">
+                        <h2>lina Park</h2>
+                        <p class="role">Instruktör · Rörlighet</p>
+                        <p class="description">Fysioterapeut med fokus på rygg och leder.</p>
+                    <div class="tags">
+                        <span class="tag">Rörlighet</span>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="team-card">
+                    <div class="portrait">
+                        <img src="https://performanceforhealth.com/wp-content/uploads/2026/02/Monte-2-800x800-1.jpg" alt="Erik Sund, personlig tränare">
+                    </div>
+                    <div class="card-content">
+                        <h2>erik sund</h2>
+                        <p class="role">PT · Löpning</p>
+                        <p class="description">Coachar allt från första 5 km till maraton.</p>
+                    <div class="tags">
+                        <span class="tag">Styrka bas</span>
+                        <span class="tag">Puls HIIT</span>
+                    </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="train-div">
+                <div class="train-text">
+                    <h2>Vill du träna med PT?</h2>
+                    <p>Första konsultationen är kostnadsfri.</p>
+                </div>
+
+                <div class="train-buttons">
+                    <button class="buttonfirst">Boka konsultation</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="puls-träningsstudio-footer">puls träningsstudio</p>
+        <p class="adress-footer">Industrigatan 18, 123 45 Hamnstad<br><a href="tel:0107654321">010-765 43 21</a></p>
+        <p class="dagar-footer">Bemannat vardagar 6-21<br>Öppet för medlemmar 05-23</p>
+    </footer>
+    
+</body>
+</html>
