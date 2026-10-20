@@ -50,6 +50,11 @@ th {
   .contact-page .container {
     display: flex;
     gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .persinfo input[type='submit'] {
+    width: auto;
   }
 
   .contact {
@@ -66,4 +71,31 @@ th {
 input, textarea {
     border: 0.02rem solid gray;
     border-radius: 4px;
+}
+.card h2 {
+  margin: 0.5rem;
+  font-size: 500;
+}
+
+.persinfo input,
+.persinfo textarea {
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.75rem;
+}
+
+.radio {
+  color: $orange; 
+}
+
+.persinfo textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.persinfo input[type='submit'] {
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.25rem;
 }
