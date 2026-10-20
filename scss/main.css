@@ -301,21 +301,12 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.home .headline h1 {
-  font-size: 70px;
-  margin-bottom: auto;
-  margin-top: auto;
-}
 .home h2 {
   font-size: 40px;
 }
 .home .orangeheadline {
   color: #FF7A3D;
   text-transform: uppercase;
-}
-.home .container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 .home .buttonfirst {
   font-size: 18px;
@@ -343,7 +334,7 @@ footer {
   margin-top: -5px;
   margin-bottom: -5px;
 }
-.home .picure {
+.home .picture {
   height: 300px;
   width: auto;
   background: #2a2a32;
@@ -356,8 +347,7 @@ footer {
 }
 .home .popinfo h2 {
   font-size: 40px;
-  padding: 15px;
-  margin-bottom: auto;
+  margin-bottom: 1rem;
 }
 .home .offercard {
   background: #FF7A3D;
@@ -398,20 +388,17 @@ footer {
   .home .firstinfo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 2rem;
   }
-  .home .picure {
+  .home .picture {
     width: 50%;
     height: 400px;
     display: flex;
   }
   .home .popinfo {
     background: #1c1f2a;
-    padding: 25px;
-    margin: 30px -20px 30px -20px;
-  }
-  .home .popinfo h2 {
-    padding: none;
+    margin: 30px -30px;
+    padding: 1.5rem 30px;
   }
   .home .offercard {
     display: flex;
@@ -437,7 +424,14 @@ footer {
   .home .card {
     flex: 1 1 0;
     min-width: 0;
+    max-width: none;
   }
+}
+
+img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 4px;
 }
 
 .legend {
