@@ -10,11 +10,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
 }
-.headline h1 {
-    font-size: 70px;
-    margin-bottom: auto;
-    margin-top: auto;
-}
+
 h2 {
     font-size: 40px;
  
@@ -22,11 +18,6 @@ h2 {
 .orangeheadline{
     color: $orange;
     text-transform: uppercase;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    
 }
 .buttonfirst{
     font-size: 18px;
@@ -55,7 +46,7 @@ h2 {
     margin-top: -5px;
     margin-bottom: -5px;
 }
-.picure {
+.picture {
     height: 300px;
     width: auto;
     background: #2a2a32;
@@ -68,8 +59,7 @@ h2 {
 }
 .popinfo h2{
     font-size: 40px;
-    padding: 15px;
-    margin-bottom: auto;
+    margin-bottom: 1rem;
 }
 .offercard {
     background: $orange ;
@@ -113,21 +103,18 @@ body {
      .firstinfo{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 2rem;
     }
-    .picure{
+    .picture{
         width: 50%;
         height: 400px;
         display: flex;
     }
-    .popinfo{
-        background: $secondarybackgroundcolor;
-        padding: 25px;
-        margin:30px -20px 30px -20px;
-    }
-    .popinfo h2{
-        padding: none;
-    }
+    .popinfo {
+    background: $secondarybackgroundcolor;
+    margin: 30px -30px;
+    padding: 1.5rem 30px;
+}
     .offercard{
         display: flex;
         flex-direction: row;
@@ -152,7 +139,14 @@ body {
     }
     .card{
         flex: 1 1 0;
-        min-width: 0 
+        min-width: 0; 
+        max-width: none;
     }
 }
+}
+
+img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 4px;
 }
