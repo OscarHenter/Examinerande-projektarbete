@@ -1,152 +1,160 @@
 @use "../abstracts/variables" as *;
 
 .home {
+    h1, h2, h3 {
+        color: $titlecolor;
+        text-transform: uppercase;
+    }
 
-h1, h2, h3 {
-    color: $titlecolor;
-    text-transform: uppercase;
-}
-.headline {
-    display: flex;
-    flex-direction: column;
-}
-
-h2 {
-    font-size: 40px;
- 
-}
-.orangeheadline{
-    color: $orange;
-    text-transform: uppercase;
-}
-.buttonfirst{
-    font-size: 18px;
-}
-.mainbuttons{
-    display: flex;
-    flex-direction: column;
-}
-.buttonsecond{
-    margin:15px 0 15px 0;
-    font-size: 18px;
-}
-
-.card{
-    border-radius: 15px;
-    margin-bottom: 15px;
-    padding:15px 25px 15px 25px;
-    background: $secondarybackgroundcolor;
-}
-:focus-visible {
-    outline: 3px solid #0056b3;
-    outline-offset: 2px;  
-}
-.card h3 {
-    font-size: 30px;
-    margin-top: -5px;
-    margin-bottom: -5px;
-}
-.picture {
-    height: 300px;
-    width: auto;
-    background: #2a2a32;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.popinfo{
-    margin-bottom: 15px;
-}
-.popinfo h2{
-    font-size: 40px;
-    margin-bottom: 1rem;
-}
-.offercard {
-    background: $orange ;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.offercard h2{
-    color: $primarybackgroundcolor;
-    margin: auto;
-}
-.offercard p{
-    color: $primarybackgroundcolor;
-}
-.offerbutton .buttonsecond{
-    border: none;
-    margin: auto;
-    width: 100%;
-}
-p {
-    color: $textcolor;
-}
-.orangetext {
-    color: $orange;
-}
-body {
-    background: $primarybackgroundcolor;
-    
-}
-@media screen and (min-width: 426px) {
-    .mainbuttons{
+    .headline {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
-    .buttonfirst{
-        margin:15px 15px 15px 0;    
+
+    h2 {
+        font-size: 40px;
     }
-    
-}
-@media screen and ( min-width: 580px){
-     .firstinfo{
+
+    .orangeheadline {
+        color: $orange;
+        text-transform: uppercase;
+    }
+
+    .buttonfirst {
+        font-size: 18px;
+    }
+
+    .mainbuttons {
         display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        flex-direction: column;
     }
-    .picture{
-        width: 50%;
-        height: 400px;
-        display: flex;
+
+    .buttonsecond {
+        margin: 15px 0;
+        font-size: 18px;
     }
+
+    .card {
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 15px 25px;
+        background: $secondarybackgroundcolor;
+    }
+
+    .card h3 {
+        font-size: 30px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    :focus-visible {
+        outline: 3px solid #0056b3;
+        outline-offset: 2px;
+    }
+
+    // Bilden på mobil: full bredd, under texten
+    .firstinfo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+    }
+
     .popinfo {
-    background: $secondarybackgroundcolor;
-    margin: 30px -30px;
-    padding: 1.5rem 30px;
-}
-    .offercard{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    } 
-    .allcards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        margin-bottom: 15px;
     }
-    .card{
-        max-width: 200px;
-        background-color: $primarybackgroundcolor;
-    }
-}
-@media screen and ( min-width: 780px){
-   .allcards{
-        display: flex;
-        gap: 10px;
-    
-    }
-    .card{
-        flex: 1 1 0;
-        min-width: 0; 
-        max-width: none;
-    }
-}
-}
 
-img {
-    max-width: 100%;
-    height: 300px;
-    border-radius: 4px;
+    .popinfo h2 {
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+
+    .offercard {
+        background: $orange;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .offercard h2 {
+        color: $primarybackgroundcolor;
+        margin: auto;
+    }
+
+    .offercard p {
+        color: $primarybackgroundcolor;
+    }
+
+    .offerbutton .buttonsecond {
+        border: none;
+        margin: auto;
+        width: 100%;
+    }
+
+    p {
+        color: $textcolor;
+    }
+
+    .orangetext {
+        color: $orange;
+    }
+
+    @media screen and (min-width: 426px) {
+        .mainbuttons {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .buttonfirst {
+            margin: 15px 15px 15px 0;
+        }
+    }
+
+    @media screen and (min-width: 580px) {
+        .firstinfo {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        .firstinfo img {
+            width: 50%;
+        }
+
+        .popinfo {
+            background: $secondarybackgroundcolor;
+            margin: 30px -30px;
+            padding: 1.5rem 30px;
+        }
+
+        .offercard {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .allcards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            max-width: 200px;
+            background-color: $primarybackgroundcolor;
+        }
+    }
+
+    @media screen and (min-width: 780px) {
+        .allcards {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card {
+            flex: 1 1 0;
+            min-width: 0;
+            max-width: none;
+        }
+    }
 }
